@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Showroom | Pilot Car Co.</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">PILOT<span>CARS</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html" class="active">Inventory</a></li>
+            <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="shop-header" style="text-align: center; margin-bottom: 40px;">
+            <h1>Our Premium Inventory</h1>
+            <p>Select a vehicle to begin your journey</p>
+        </div>
+
+        <div id="carGrid" class="car-grid"></div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout | Pilot Car Co.</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-box">
+            <h2>Finalize Purchase</h2>
+            <p>Confirm your delivery details</p>
+            <form id="checkoutForm">
+                <div class="input-field">
+                    <label>Shipping Address</label>
+                    <input type="text" id="address" placeholder="e.g. 123 Mombasa Rd" required>
+                </div>
+                <div class="input-field">
+                    <label>Payment Method</label>
+                    <select required>
+                        <option value="mpesa">M-Pesa</option>
+                        <option value="card">Credit Card</option>
+                        <option value="bank">Bank Transfer</option>
+                    </select>
+                </div>
+                <button type="button" class="auth-btn" onclick="placeOrder()">Confirm Order</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function placeOrder() {
+            alert("Order Placed Successfully! You can now track your delivery.");
+            localStorage.removeItem('cart'); // Clear cart after purchase
+            window.location.href = 'orders.html';
+        }
+    </script>
+</body>
+</html>

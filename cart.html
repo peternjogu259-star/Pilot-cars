@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart | Pilot Car Co.</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">PILOT<span>CARS</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Inventory</a></li>
+            <li><a href="cart.html" class="active">Cart</a></li>
+            <li><a href="orders.html">Track Order</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Shopping Cart</h1>
+        <div id="cart-content">
+            <table class="order-table">
+                <thead>
+                    <tr>
+                        <th>Car Model</th>
+                        <th>Price</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="cartItems">
+                    </tbody>
+            </table>
+
+            <div class="cart-summary" style="margin-top: 20px; text-align: right; background: white; padding: 20px; border-radius: 8px;">
+                <h3>Total: <span id="cartTotal">KES 0</span></h3>
+                <button class="auth-btn" style="width: 200px; margin-top: 10px;" onclick="proceedToCheckout()">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
